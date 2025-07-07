@@ -1,0 +1,38 @@
+```BLE Channel Sounding
+
+> CS uses Phase-Based Ranging (PBR) and Round-Trip Time (RTT) for precise ranging. PBR measures phase differences across multiple frequency channels, while RTT calculates signal travel time, enhancing security and accuracy
+
+Roles
+
+> Initiator: Initiates the process by sending CS_SYNC packets and computes distance from Reflector responses
+> Reflector: Responds to CS_SYNC packets, reflects signals, and provides data via GATT notifications
+
+nRF RAS Implementation
+
+> Initiator(Central) connects to the Reflector via RAS UUID
+> Configures Channel Sounding, subscribes to ranging_data, and sends CS_SYNC packets
+> Processes responses with cs_de_calc for distance estimates
+
+> Reflector(Peripheral) advertises RAS UUID
+> Responds to CS_SYNC packets, updates GATT characteristics, and notifies the Initiator
+
+cs_de.c
+
+> cs_de_calc: Function that processes IQ samples for distance
+> calculate_dist_ifft: Uses IFFT to compute distance from phase data
+> calculate_dist_d_spaced_kay_f: Applies a phase slope method for PBR distance calculation
+> Round-Trip Time (RTT) - Measures how long a signal takes to travel and return for distance accuracy using calculate_dist_rtt
+
+Security - Keeps ranging data encrypted and authenticated.
+
+> bt_conn_set_security: Sets BLE connection security to Level 2 (L2CAP)
+> bt_le_cs_security_enable: Turns on Channel Sounding-specific encryption
+> security_changed: Callback that confirms when security is active
+
+Initiator and Reflector
+
+> bt_le_cs_set_default_settings: Sets role with enable_initiator_role = true (Initiator) or enable_reflector_role = true (Reflector)
+> subevent_result_cb: Handles results from signal exchanges (both roles)
+> ranging_data_cb: Manages ranging data from CS_SYNC packets (both roles)
+
+> PBR and RTT distances are computed by cs_de_calc using calculate_dist_ifft, calculate_dist_d_spaced_kay_f, and calculate_dist_rtt

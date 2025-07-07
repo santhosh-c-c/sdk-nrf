@@ -65,7 +65,7 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
       repo-path: sdk-zephyr
-      revision: a6a46c9290839a79df349dab8122c64db1bdd715
+      revision: 9b0cfccc78663cfbca113937473ce20d819367f0
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
@@ -128,7 +128,7 @@ manifest:
           compare-by-default: true
     - name: mcuboot
       repo-path: sdk-mcuboot
-      revision: f123819a1d3322fa230f7cacd6d8f1672d8651e7
+      revision: 29bcb744c54f93bc363b47e498afd31bbbdf2f6e
       path: bootloader/mcuboot
     - name: qcbor
       url: https://github.com/laurencelundblade/QCBOR
@@ -145,7 +145,7 @@ manifest:
     - name: nrfxlib
       repo-path: sdk-nrfxlib
       path: nrfxlib
-      revision: 38b34aa2e9f5cd1df3fe1d615f2a5de244f2542e
+      revision: 24914d194258875efe7024b9bd01c6ca03569de8
     - name: trusted-firmware-m
       repo-path: sdk-trusted-firmware-m
       path: modules/tee/tf-m/trusted-firmware-m
@@ -183,7 +183,7 @@ manifest:
       # Only for internal Nordic development
       repo-path: dragoon.git
       remote: dragoon
-      revision: 4d736042d53dc503c65f2b04c15806089dd2ec60
+      revision: fa3e7d6417c50c8caf98425d2a401a812ebf9b4f
       groups:
         - dragoon
     - name: cjson
@@ -197,7 +197,7 @@ manifest:
           compare-by-default: false
     - name: find-my
       repo-path: sdk-find-my
-      revision: 20092c375a16ea6e0a0cfc3c159adf21fbb1f6be
+      revision: 7849d122f77826c161ae6a8f0f205fef98158fe6
       groups:
         - find-my
     - name: azure-sdk-for-c

@@ -36,6 +36,8 @@
 .. _`RST source file of Documentation guidelines`: https://raw.githubusercontent.com/nrfconnect/sdk-nrf/main/doc/nrf/dev_model_and_contributions/documentation/styleguide.rst
 .. _`sdk-sidewalk`: https://github.com/nrfconnect/sdk-sidewalk
 .. _`Amazon Sidewalk Sample IoT App`: https://github.com/aws-samples/aws-iot-core-for-amazon-sidewalk-sample-app
+.. _`Zigbee R23 add-on repository`: https://github.com/nrfconnect/ncs-zigbee
+.. _`Zigbee R22 add-on repository`: https://github.com/nrfconnect/ncs-zigbee-r22
 .. _`sdk-zephyr`: https://github.com/nrfconnect/sdk-zephyr
 .. _`official Zephyr repository`:
 .. _`Zephyr repository`: https://github.com/zephyrproject-rtos/zephyr
@@ -52,6 +54,7 @@
 .. _`TF-M sample incompatibility issue`: https://github.com/zephyrproject-rtos/zephyr/issues/34658
 
 .. _`Asset Tracker Template`: https://docs.nordicsemi.com/bundle/asset-tracker-template-latest/page/index.html
+.. _`Asset-Tracker-Template`: https://github.com/nrfconnect/Asset-Tracker-Template
 
 .. _`generate_psa_key_attributes.py`: https://github.com/nrfconnect/sdk-nrf/blob/main/scripts/generate_psa_key_attributes.py
 .. _`print_toolchain_checksum.sh`: https://github.com/nrfconnect/sdk-nrf/blob/main/scripts/print_toolchain_checksum.sh
@@ -764,6 +767,7 @@
 .. _`nRF91x1 Power saving mode setting`: https://docs.nordicsemi.com/bundle/ref_at_commands_nrf91x1/page/REF/at_commands/nw_service/cpsms.html
 .. _`nRF91x1 modem trace activation %XMODEMTRACE`: https://docs.nordicsemi.com/bundle/ref_at_commands_nrf91x1/page/REF/at_commands/mob_termination_ctrl_status/xmodemtrace.html
 .. _`nRF91x1 UICC deactivation %UICCPOWERSAVE`: https://docs.nordicsemi.com/bundle/ref_at_commands_nrf91x1/page/REF/at_commands/access_uicc/uiccpowersave.html
+.. _`nRF91x1 Feature configuration %FEACONF`: https://docs.nordicsemi.com/bundle/ref_at_commands_nrf91x1/page/REF/at_commands/nw_service/feaconf_set.html
 
 .. _`nRF54L15 Datasheet`: https://docs.nordicsemi.com/bundle/ps_nrf54L15/page/keyfeatures_html5.html
 .. _`nRF54L15 DK User Guide`: https://docs.nordicsemi.com/bundle/ug_nrf54l15_dk/page/UG/nRF54L15_DK/intro/intro.html

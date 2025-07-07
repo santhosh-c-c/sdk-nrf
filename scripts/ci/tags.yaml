@@ -545,6 +545,7 @@ ci_samples_esb:
     - nrf/subsys/esb/
     - nrf/subsys/mpsl/
     - nrfxlib/crypto/
+    - nrfxlib/mpsl/
     - zephyr/soc/nordic/
 
 ci_samples_edge_impulse:
@@ -1049,7 +1050,7 @@ ci_samples_pmic:
     - zephyr/drivers/i2c/
     - zephyr/drivers/mfd/
     - zephyr/drivers/regulator/
-    - zephyr/drivers/sensor/nordic/npm1300_charger/
+    - zephyr/drivers/sensor/nordic/npm13xx_charger/
 
 ci_samples_ipc:
   files:
@@ -1874,3 +1875,17 @@ ci_samples_zephyr_smp_svr_mini_boot:
     - zephyr/subsys/bluetooth/
     - zephyr/subsys/dfu/
     - zephyr/subsys/mgmt/
+
+ci_samples_dfu:
+  files:
+    - bootloader/mcuboot/
+    - nrf/samples/dfu/
+    - zephyr/drivers/flash/
+    - zephyr/subsys/dfu/
+
+ci_samples_nrf54h20:
+  files:
+    - modules/hal/nordic/nrfs/
+    - nrf/samples/nrf54h20/
+    - zephyr/modules/hal_nordic/
+    - zephyr/soc/nordic/nrf54h/

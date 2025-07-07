@@ -27,6 +27,7 @@
 /.vscode/                                 @kylebonnici
 
 # Applications
+/applications/asset_tracker_template/README.rst @nrfconnect/ncs-cia-doc
 /applications/connectivity_bridge/        @nrfconnect/ncs-cia @nordic-auko
 /applications/ipc_radio/                  @nrfconnect/ncs-si-muffin
 /applications/machine_learning/           @nrfconnect/ncs-si-muffin
@@ -53,13 +54,13 @@
 /boards/nordic/nrf54l*/                   @nrfconnect/ncs-co-boards @kl-cruz
 /boards/nordic/nrf52*                     @nrfconnect/ncs-co-boards @nrfconnect/ncs-si-bluebagel
 /boards/nordic/thingy91*/                 @nrfconnect/ncs-co-boards @nrfconnect/ncs-cia
-/boards/shields/coverage_support/         @nrfconnect/ncs-low-level-test
-/boards/shields/nrf2220ek/                @nrfconnect/ncs-radio-sw
-/boards/shields/nrf2240ek/                @nrfconnect/ncs-radio-sw
-/boards/shields/nrf21540ek/               @nrfconnect/ncs-radio-sw
 
-# This shield entry must be below other shield entries (excluding doc), do not move
 **/shields/                               @nrfconnect/ncs-co-build-system
+
+/boards/shields/coverage_support/         @nrfconnect/ncs-co-build-system @nrfconnect/ncs-low-level-test
+/boards/shields/nrf2220ek/                @nrfconnect/ncs-co-build-system @nrfconnect/ncs-radio-sw
+/boards/shields/nrf2240ek/                @nrfconnect/ncs-co-build-system @nrfconnect/ncs-radio-sw
+/boards/shields/nrf21540ek/               @nrfconnect/ncs-co-build-system @nrfconnect/ncs-radio-sw
 
 /boards/shields/pca63566/doc/*.rst        @nrfconnect/ncs-doc-leads
 
@@ -179,7 +180,6 @@
 /doc/nrf/libraries/networking/ot_rpc.rst  @nrfconnect/ncs-terahertz-doc @nrfconnect/ncs-protocols-serialization
 /doc/nrf/libraries/networking/rest_client.rst @nrfconnect/ncs-iot-positioning-doc
 /doc/nrf/libraries/networking/softap_wifi_provision.rst @nrfconnect/ncs-cia-doc
-/doc/nrf/libraries/networking/wifi_credentials.rst @nrfconnect/ncs-cia-doc
 /doc/nrf/libraries/networking/wifi_mgmt_ext.rst @nrfconnect/ncs-cia-doc
 /doc/nrf/libraries/networking/wifi_ready.rst @nrfconnect/ncs-wifi-doc
 /doc/nrf/libraries/nfc/                   @nrfconnect/ncs-si-muffin-doc
